@@ -2,7 +2,7 @@ let currentImageIndex = 0;
 let images = [];
 
 async function generateGallery() {
-    const response = await fetch("images/images.json");
+    const response = await fetch("https://dannymart18.github.io/images/images.json");
     const data = await response.json();
     images = data.images;
     const carouselInner = document.querySelector('.carousel-inner');
